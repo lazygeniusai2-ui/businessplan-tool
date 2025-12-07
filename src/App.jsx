@@ -782,542 +782,433 @@ Make this a world-class business plan that could actually secure funding from to
             <div>
                );
               
-      case 5:
-        return (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
-              Competitive Landscape
-            </h2>
+          case 5:
+      // COMPETITIVE LANDSCAPE
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: 700 }}>
+            Competitive Landscape
+          </h2>
 
-            <div>
-              <label style={labelStyle}>Direct Competitors *</label>
-              <textarea
-                name="directCompetitors"
-                value={formData.directCompetitors}
-                onChange={handleInputChange}
-                placeholder="List your main direct competitors and briefly describe what they offer."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Indirect Competitors</label>
-              <textarea
-                name="indirectCompetitors"
-                value={formData.indirectCompetitors}
-                onChange={handleInputChange}
-                placeholder="Who else competes for your customer’s money or attention (even if not directly in your niche)?"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-            <div>
-              <label style={labelStyle}>Our Positioning *</label>
-              <textarea
-                name="competitivePositioning"
-                value={formData.competitivePositioning}
-                onChange={handleInputChange}
-                placeholder="How do you position yourself versus competitors? Cheaper, faster, premium, niche, more convenient, etc."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-            
-            <div>
-               );
-              
-      case 6:
-        return (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
-              Products & Services
-            </h2>
-
-            <div>
-              <label style={labelStyle}>Core Offerings *</label>
-              <textarea
-                name="productServices"
-                value={formData.productServices}
-                onChange={handleInputChange}
-                placeholder="Describe your main products/services, versions, tiers, or packages."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-              <div>
-                <label style={labelStyle}>Pricing Model *</label>
-                <input
-                  type="text"
-                  name="pricingModel"
-                  value={formData.pricingModel}
-                  onChange={handleInputChange}
-                  placeholder="Subscription, one-time, freemium, usage-based, etc."
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>Typical Price Point</label>
-                <input
-                  type="text"
-                  name="pricePoint"
-                  value={formData.pricePoint}
-                  onChange={handleInputChange}
-                  placeholder="e.g., $29/month, $299 per package"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-            </div>
-
-            <div>
-              <label style={labelStyle}>Revenue Streams *</label>
-              <textarea
-                name="revenueStreams"
-                value={formData.revenueStreams}
-                onChange={handleInputChange}
-                placeholder="List all ways you make money (subscriptions, upsells, consulting, ads, etc.)"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Cost Structure</label>
-              <textarea
-                name="costStructure"
-                value={formData.costStructure}
-                onChange={handleInputChange}
-                placeholder="Main fixed and variable costs (rent, payroll, marketing, COGS, licenses, etc.)"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
+          <div>
+            <label style={labelStyle}>Direct Competitors *</label>
+            <textarea
+              name="directCompetitors"
+              value={formData.directCompetitors}
+              onChange={handleInputChange}
+              placeholder="List your main direct competitors and briefly describe what they offer."
+              style={textareaStyle}
+            />
           </div>
-               );
-              
-    case 7:
-        return (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
-              Marketing & Sales Strategy
-            </h2>
 
-            <div>
-              <label style={labelStyle}>Marketing Channels *</label>
-              <textarea
-                name="marketingChannels"
-                value={formData.marketingChannels}
-                onChange={handleInputChange}
-                placeholder="Social media, SEO, paid ads, partnerships, email, influencers, events, etc."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Sales Strategy *</label>
-              <textarea
-                name="salesStrategy"
-                value={formData.salesStrategy}
-                onChange={handleInputChange}
-                placeholder="How do you convert leads into paying customers? (funnels, demos, calls, self-serve, etc.)"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-              <div>
-                <label style={labelStyle}>Customer Acquisition Cost (CAC)</label>
-                <input
-                  type="text"
-                  name="customerAcquisitionCost"
-                  value={formData.customerAcquisitionCost}
-                  onChange={handleInputChange}
-                  placeholder="If known, how much do you spend to acquire one customer?"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>Customer Lifetime Value (LTV)</label>
-                <input
-                  type="text"
-                  name="customerLifetimeValue"
-                  value={formData.customerLifetimeValue}
-                  onChange={handleInputChange}
-                  placeholder="Estimated revenue per customer over their lifetime."
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-            </div>
-
-            <div>
-              <label style={labelStyle}>Conversion Strategy</label>
-              <textarea
-                name="conversionStrategy"
-                value={formData.conversionStrategy}
-                onChange={handleInputChange}
-                placeholder="How do you move people from awareness → interest → purchase?"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Brand Strategy</label>
-              <textarea
-                name="brandStrategy"
-                value={formData.brandStrategy}
-                onChange={handleInputChange}
-                placeholder="How do you want your brand to be perceived? Positioning, tone, visual identity."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
+          <div>
+            <label style={labelStyle}>Indirect Competitors</label>
+            <textarea
+              name="indirectCompetitors"
+              value={formData.indirectCompetitors}
+              onChange={handleInputChange}
+              placeholder="Who else competes for your customer’s money or attention (even if not in your exact niche)?"
+              style={textareaStyle}
+            />
           </div>
-               );
-              
-      case 8:
-        return (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
-              Operations & Infrastructure
-            </h2>
 
-            <div>
-              <label style={labelStyle}>Key Suppliers</label>
-              <textarea
-                name="keySuppliers"
-                value={formData.keySuppliers}
-                onChange={handleInputChange}
-                placeholder="Main suppliers or service providers you rely on (raw materials, tech vendors, logistics, etc.)."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Technology Stack</label>
-              <textarea
-                name="technology"
-                value={formData.technology}
-                onChange={handleInputChange}
-                placeholder="Key software, platforms, and tools used to run the business."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Equipment Needed</label>
-              <textarea
-                name="equipment"
-                value={formData.equipment}
-                onChange={handleInputChange}
-                placeholder="Any major equipment or physical assets needed."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Facilities</label>
-              <textarea
-                name="facilities"
-                value={formData.facilities}
-                onChange={handleInputChange}
-                placeholder="Offices, warehouses, stores, kitchens, etc."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Inventory / Operations Approach</label>
-              <textarea
-                name="inventory"
-                value={formData.inventory}
-                onChange={handleInputChange}
-                placeholder="How do you manage inventory, fulfillment, and daily operations?"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
+          <div>
+            <label style={labelStyle}>Our Positioning *</label>
+            <textarea
+              name="competitivePositioning"
+              value={formData.competitivePositioning}
+              onChange={handleInputChange}
+              placeholder="How do you position yourself vs competitors? Premium, low-cost, niche, faster, more convenient, etc."
+              style={textareaStyle}
+            />
           </div>
-               );
-              
-      case 9:
-        return (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
-              Team & Organization
-            </h2>
 
-            <div>
-              <label style={labelStyle}>Founders' Background *</label>
-              <textarea
-                name="foundersBackground"
-                value={formData.foundersBackground}
-                onChange={handleInputChange}
-                placeholder="Summarize founders’ experience, track record, and why they are uniquely suited for this venture."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-              <div>
-                <label style={labelStyle}>Current Team Size</label>
-                <input
-                  type="text"
-                  name="teamSize"
-                  value={formData.teamSize}
-                  onChange={handleInputChange}
-                  placeholder="e.g., 2 founders, 3 full-time employees, 2 contractors"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>Key Roles Needed</label>
-                <input
-                  type="text"
-                  name="keyRoles"
-                  value={formData.keyRoles}
-                  onChange={handleInputChange}
-                  placeholder="What key roles do you still need to hire for?"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-            </div>
-
-            <div>
-              <label style={labelStyle}>Advisors / Board</label>
-              <textarea
-                name="advisors"
-                value={formData.advisors}
-                onChange={handleInputChange}
-                placeholder="Any mentors, advisors, or board members supporting the business."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Hiring Plan</label>
-              <textarea
-                name="hiringPlan"
-                value={formData.hiringPlan}
-                onChange={handleInputChange}
-                placeholder="Who will you hire and when over the next 12–24 months?"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Culture & Values</label>
-              <textarea
-                name="cultureValues"
-                value={formData.cultureValues}
-                onChange={handleInputChange}
-                placeholder="What kind of culture do you want to build? Core values, principles, and working style."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
+          <div>
+            <label style={labelStyle}>Barriers to Entry</label>
+            <textarea
+              name="barrierToEntry"
+              value={formData.barrierToEntry}
+              onChange={handleInputChange}
+              placeholder="What makes it hard for others to copy you? Capital, relationships, tech, IP, brand, regulation, etc."
+              style={textareaStyle}
+            />
           </div>
-               );
-              
-      case 10:
-        return (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
-              Financial Snapshot
-            </h2>
+        </div>
+      );
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-              <div>
-                <label style={labelStyle}>Funding Needed *</label>
-                <input
-                  type="text"
-                  name="fundingNeeded"
-                  value={formData.fundingNeeded}
-                  onChange={handleInputChange}
-                  placeholder="e.g., $150,000 seed round, $1M Series A"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>Target Profit Margin</label>
-                <input
-                  type="text"
-                  name="profitMargin"
-                  value={formData.profitMargin}
-                  onChange={handleInputChange}
-                  placeholder="e.g., 20–30% net margin at scale"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-            </div>
+    case 6:
+      // PRODUCTS & SERVICES
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: 700 }}>
+            Products & Services
+          </h2>
 
+          <div>
+            <label style={labelStyle}>Core Offerings *</label>
+            <textarea
+              name="productServices"
+              value={formData.productServices}
+              onChange={handleInputChange}
+              placeholder="Describe your main products/services, versions, tiers, or packages."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
             <div>
-              <label style={labelStyle}>Use of Funds *</label>
-              <textarea
-                name="fundingPurpose"
-                value={formData.fundingPurpose}
-                onChange={handleInputChange}
-                placeholder="How exactly will you use the funds? (product, marketing, hiring, inventory, etc.)"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-              <div>
-                <label style={labelStyle}>Break-Even Timeline</label>
-                <input
-                  type="text"
-                  name="breakEvenTimeline"
-                  value={formData.breakEvenTimeline}
-                  onChange={handleInputChange}
-                  placeholder="When do you expect to become profitable?"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-              <div>
-                <label style={labelStyle}>Monthly Cash Burn</label>
-                <input
-                  type="text"
-                  name="cashBurn"
-                  value={formData.cashBurn}
-                  onChange={handleInputChange}
-                  placeholder="Roughly how much cash do you burn per month?"
-                  style={inputStyle}
-                  onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-                />
-              </div>
-            </div>
-
-            <div>
-              <label style={labelStyle}>Runway</label>
+              <label style={labelStyle}>Pricing Model *</label>
               <input
                 type="text"
-                name="runway"
-                value={formData.runway}
+                name="pricingModel"
+                value={formData.pricingModel}
                 onChange={handleInputChange}
-                placeholder="How many months of runway do you have at current burn?"
+                placeholder="Subscription, one-time, freemium, usage-based, etc."
                 style={inputStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
               />
             </div>
-          </div>
-              <label style={labelStyle}>Barriers to Entry</label>
-              <textarea
-                name="barrierToEntry"
-                value={formData.barrierToEntry}
+            <div>
+              <label style={labelStyle}>Typical Price Point</label>
+              <input
+                type="text"
+                name="pricePoint"
+                value={formData.pricePoint}
                 onChange={handleInputChange}
-                placeholder="What makes it hard for others to copy you? (capital, tech, brand, relationships, regulation, IP, etc.)"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
+                placeholder="e.g., $29/month, $299 per package"
+                style={inputStyle}
               />
             </div>
           </div>
 
-              <label style={labelStyle}>Your Solution *</label>
-              <textarea
-                name="yourSolution"
-                value={formData.yourSolution}
+          <div>
+            <label style={labelStyle}>Revenue Streams *</label>
+            <textarea
+              name="revenueStreams"
+              value={formData.revenueStreams}
+              onChange={handleInputChange}
+              placeholder="All ways you make money: subscriptions, one-off sales, upsells, consulting, ads, etc."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Cost Structure</label>
+            <textarea
+              name="costStructure"
+              value={formData.costStructure}
+              onChange={handleInputChange}
+              placeholder="Main fixed and variable costs: rent, payroll, marketing, COGS, software, logistics, etc."
+              style={textareaStyle}
+            />
+          </div>
+        </div>
+      );
+
+    case 7:
+      // MARKETING & SALES
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: 700 }}>
+            Marketing & Sales Strategy
+          </h2>
+
+          <div>
+            <label style={labelStyle}>Marketing Channels *</label>
+            <textarea
+              name="marketingChannels"
+              value={formData.marketingChannels}
+              onChange={handleInputChange}
+              placeholder="Social media, SEO, paid ads, email, influencers, partnerships, events, etc."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Sales Strategy *</label>
+            <textarea
+              name="salesStrategy"
+              value={formData.salesStrategy}
+              onChange={handleInputChange}
+              placeholder="How do you turn leads into paying customers? Funnels, demos, sales calls, self-serve, etc."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div>
+              <label style={labelStyle}>Customer Acquisition Cost (CAC)</label>
+              <input
+                type="text"
+                name="customerAcquisitionCost"
+                value={formData.customerAcquisitionCost}
                 onChange={handleInputChange}
-                placeholder="How does your product/service solve this problem?"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
+                placeholder="If known, how much do you spend to acquire one customer?"
+                style={inputStyle}
               />
             </div>
-
             <div>
-              <label style={labelStyle}>Unique Value Proposition *</label>
-              <textarea
-                name="uniqueValueProp"
-                value={formData.uniqueValueProp}
+              <label style={labelStyle}>Customer Lifetime Value (LTV)</label>
+              <input
+                type="text"
+                name="customerLifetimeValue"
+                value={formData.customerLifetimeValue}
                 onChange={handleInputChange}
-                placeholder="What makes your solution unique? Why you and not someone else?"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Key Features/Benefits</label>
-              <textarea
-                name="keyFeatures"
-                value={formData.keyFeatures}
-                onChange={handleInputChange}
-                placeholder="List the main features and customer benefits"
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
-              />
-            </div>
-
-            <div>
-              <label style={labelStyle}>Competitive Advantages *</label>
-              <textarea
-                name="competitiveAdvantages"
-                value={formData.competitiveAdvantages}
-                onChange={handleInputChange}
-                placeholder="Patents, technology, partnerships, expertise, network effects, etc."
-                style={textareaStyle}
-                onFocus={(e) => e.target.style.borderColor = '#FFD700'}
-                onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
+                placeholder="Estimated revenue from a customer over their lifetime."
+                style={inputStyle}
               />
             </div>
           </div>
-        );
+
+          <div>
+            <label style={labelStyle}>Conversion Strategy</label>
+            <textarea
+              name="conversionStrategy"
+              value={formData.conversionStrategy}
+              onChange={handleInputChange}
+              placeholder="How do you move people from awareness → interest → purchase?"
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Brand Strategy</label>
+            <textarea
+              name="brandStrategy"
+              value={formData.brandStrategy}
+              onChange={handleInputChange}
+              placeholder="How do you want your brand to be perceived? Tone, personality, visual identity."
+              style={textareaStyle}
+            />
+          </div>
+        </div>
+      );
+
+    case 8:
+      // OPERATIONS & INFRASTRUCTURE
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: 700 }}>
+            Operations & Infrastructure
+          </h2>
+
+          <div>
+            <label style={labelStyle}>Key Suppliers</label>
+            <textarea
+              name="keySuppliers"
+              value={formData.keySuppliers}
+              onChange={handleInputChange}
+              placeholder="Main suppliers or service providers (raw materials, tech vendors, logistics, platforms, etc.)."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Technology Stack</label>
+            <textarea
+              name="technology"
+              value={formData.technology}
+              onChange={handleInputChange}
+              placeholder="Key software, platforms, and tools you rely on to run the business."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Equipment Needed</label>
+            <textarea
+              name="equipment"
+              value={formData.equipment}
+              onChange={handleInputChange}
+              placeholder="Any major equipment or physical assets required."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Facilities</label>
+            <textarea
+              name="facilities"
+              value={formData.facilities}
+              onChange={handleInputChange}
+              placeholder="Offices, warehouses, stores, kitchens, or other physical locations."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Inventory / Operations Approach</label>
+            <textarea
+              name="inventory"
+              value={formData.inventory}
+              onChange={handleInputChange}
+              placeholder="How you manage inventory, fulfillment, and daily operations."
+              style={textareaStyle}
+            />
+          </div>
+        </div>
+      );
+
+    case 9:
+      // TEAM & ORGANIZATION
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: 700 }}>
+            Team & Organization
+          </h2>
+
+          <div>
+            <label style={labelStyle}>Founders' Background *</label>
+            <textarea
+              name="foundersBackground"
+              value={formData.foundersBackground}
+              onChange={handleInputChange}
+              placeholder="Summarize founders’ experience, track record, and why they are uniquely suited to lead this venture."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div>
+              <label style={labelStyle}>Current Team Size</label>
+              <input
+                type="text"
+                name="teamSize"
+                value={formData.teamSize}
+                onChange={handleInputChange}
+                placeholder="e.g., 2 founders, 3 full-time employees, 2 contractors"
+                style={inputStyle}
+              />
+            </div>
+            <div>
+              <label style={labelStyle}>Key Roles Needed</label>
+              <input
+                type="text"
+                name="keyRoles"
+                value={formData.keyRoles}
+                onChange={handleInputChange}
+                placeholder="Which key roles do you still need to hire for?"
+                style={inputStyle}
+              />
+            </div>
+          </div>
+
+          <div>
+            <label style={labelStyle}>Advisors / Board</label>
+            <textarea
+              name="advisors"
+              value={formData.advisors}
+              onChange={handleInputChange}
+              placeholder="Any mentors, advisors, or board members supporting the business."
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Hiring Plan</label>
+            <textarea
+              name="hiringPlan"
+              value={formData.hiringPlan}
+              onChange={handleInputChange}
+              placeholder="Who will you hire and when over the next 12–24 months?"
+              style={textareaStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Culture & Values</label>
+            <textarea
+              name="cultureValues"
+              value={formData.cultureValues}
+              onChange={handleInputChange}
+              placeholder="What kind of culture do you want to build? Core values, principles, and working style."
+              style={textareaStyle}
+            />
+          </div>
+        </div>
+      );
+
+    case 10:
+      // FINANCIAL SNAPSHOT
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: 700 }}>
+            Financial Snapshot
+          </h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div>
+              <label style={labelStyle}>Funding Needed *</label>
+              <input
+                type="text"
+                name="fundingNeeded"
+                value={formData.fundingNeeded}
+                onChange={handleInputChange}
+                placeholder="e.g., $150,000 seed round, $1M Series A"
+                style={inputStyle}
+              />
+            </div>
+            <div>
+              <label style={labelStyle}>Target Profit Margin</label>
+              <input
+                type="text"
+                name="profitMargin"
+                value={formData.profitMargin}
+                onChange={handleInputChange}
+                placeholder="e.g., 20–30% net margin at scale"
+                style={inputStyle}
+              />
+            </div>
+          </div>
+
+          <div>
+            <label style={labelStyle}>Use of Funds *</label>
+            <textarea
+              name="fundingPurpose"
+              value={formData.fundingPurpose}
+              onChange={handleInputChange}
+              placeholder="How exactly will you use the funds? (product, marketing, hiring, inventory, etc.)"
+              style={textareaStyle}
+            />
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div>
+              <label style={labelStyle}>Break-Even Timeline</label>
+              <input
+                type="text"
+                name="breakEvenTimeline"
+                value={formData.breakEvenTimeline}
+                onChange={handleInputChange}
+                placeholder="When do you expect to become profitable?"
+                style={inputStyle}
+              />
+            </div>
+            <div>
+              <label style={labelStyle}>Monthly Cash Burn</label>
+              <input
+                type="text"
+                name="cashBurn"
+                value={formData.cashBurn}
+                onChange={handleInputChange}
+                placeholder="Roughly how much cash do you burn per month?"
+                style={inputStyle}
+              />
+            </div>
+          </div>
+
+          <div>
+            <label style={labelStyle}>Runway</label>
+            <input
+              type="text"
+              name="runway"
+              value={formData.runway}
+              onChange={handleInputChange}
+              placeholder="How many months of runway do you have at current burn?"
+              style={inputStyle}
+            />
+          </div>
+        </div>
+      );
 
       // Continue with cases 5-11... (I'll abbreviate for space, but would include all)
       
