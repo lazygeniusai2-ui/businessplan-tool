@@ -780,7 +780,6 @@ Make this a world-class business plan that could actually secure funding from to
             </div>
 
             <div>
-              );
                     case 5:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -828,7 +827,6 @@ Make this a world-class business plan that could actually secure funding from to
             </div>
 
             <div>
-              );
                     case 6:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -904,7 +902,6 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
-        );
       case 7:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -993,7 +990,6 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
-        );
       case 8:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -1066,7 +1062,6 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
-        );
       case 9:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -1155,7 +1150,6 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
-        );
       case 10:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -1260,7 +1254,6 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
-        );
 
               <label style={labelStyle}>Your Solution *</label>
               <textarea
