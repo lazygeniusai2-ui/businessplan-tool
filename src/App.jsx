@@ -1503,7 +1503,7 @@ Make this a world-class business plan that could actually secure funding from to
                 </button>
               )}
               
-              {currentPage < 5 ? (
+              {currentPage < 11 ? (
                 <button
                   onClick={nextPage}
                   style={{
