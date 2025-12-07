@@ -780,7 +780,9 @@ Make this a world-class business plan that could actually secure funding from to
             </div>
 
             <div>
-                    case 5:
+               );
+              
+      case 5:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
@@ -827,7 +829,9 @@ Make this a world-class business plan that could actually secure funding from to
             </div>
 
             <div>
-                    case 6:
+               );
+              
+      case 6:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
@@ -902,7 +906,9 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
-      case 7:
+               );
+              
+    case 7:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
@@ -990,6 +996,8 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
+               );
+              
       case 8:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -1062,6 +1070,8 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
+               );
+              
       case 9:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -1150,6 +1160,8 @@ Make this a world-class business plan that could actually secure funding from to
               />
             </div>
           </div>
+               );
+              
       case 10:
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
