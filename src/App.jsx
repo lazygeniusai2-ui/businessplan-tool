@@ -1021,7 +1021,7 @@ Make this a world-class business plan that could actually secure funding from to
                 </button>
               )}
               
-              {currentPage < 11 ? (
+              {currentPage < 5 ? (
                 <button
                   onClick={nextPage}
                   style={{
@@ -1133,7 +1133,7 @@ Make this a world-class business plan that could actually secure funding from to
             <button
               onClick={() => {
                 setCurrentPage(1);
-                setBusinessPlan(null);
+                setBusinessPlan(12);
               }}
               style={{
                 width: '100%',
