@@ -780,7 +780,6 @@ Make this a world-class business plan that could actually secure funding from to
             </div>
 
             <div>
-               );
               
 case 5:
       // COMPETITIVE LANDSCAPE
