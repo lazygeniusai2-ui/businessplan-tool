@@ -782,7 +782,7 @@ Make this a world-class business plan that could actually secure funding from to
             <div>
                );
               
-          case 5:
+      case 5:
       // COMPETITIVE LANDSCAPE
       return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
